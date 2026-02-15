@@ -1,30 +1,35 @@
-# 🐳 Containerization
+# Containerization
 
-Containers are the heartbeat of the modern homelab. They allow you to run hundreds of services with minimal overhead and zero dependency conflicts.
+Containerization allows for running modular services with minimal overhead and isolated dependencies. It is the primary method for deploying software in modern home labs.
 
-## 🛠️ The Engines
-*   **[Docker](https://www.docker.com/):** The industry standard. Simple, powerful, and has the largest ecosystem.
-*   **[Podman](https://podman.io/):** The "Rootless" alternative. Great for security-conscious labs.
-*   **[LXC (Linux Containers)](https://linuxcontainers.org/):** Used extensively in Proxmox. Lower overhead than Docker but requires more manual configuration.
+## Container Engines
 
-## 🕹️ Management GUIs
-If you don't want to live in the CLI:
+- **[Docker](https://www.docker.com/)** - The most common engine with extensive community support and documentation.
+- **[Podman](https://podman.io/)** - A daemonless, rootless alternative to Docker, often preferred for security-focused environments.
+- **[LXC (Linux Containers)](https://linuxcontainers.org/)** - Operating system-level virtualization used primarily on Proxmox for high-performance service isolation.
 
-*   **[Portainer](https://www.portainer.io/):** The absolute best visual manager for Docker. Full control over stacks, networks, and images.
-*   **[Dockge](https://dockge.kuma.pet/):** A newer, simpler manager focused specifically on `docker-compose.yaml` files. Created by the developer of Uptime Kuma.
-*   **[Yacht](https://yacht.sh/):** A lightweight templated manager for easy app deployment.
+## Management Interfaces
 
-## ☸️ The "Next Level": Kubernetes
-When one node isn't enough.
+Visual tools can simplify the deployment and monitoring of container stacks.
 
-*   **[K3s](https://k3s.io/):** Lightweight Kubernetes by Rancher. Perfect for Raspberry Pis or small N100 clusters.
-*   **[KIND (Kubernetes in Docker)](https://kind.sigs.k8s.io/):** Great for testing K8s manifests without a full cluster.
-*   **[Talos OS](https://www.talos.dev/):** A security-focused, immutable Linux distro built specifically for Kubernetes.
+- **[Portainer](https://www.portainer.io/)** - Provides a comprehensive dashboard for managing Docker engines, stacks, and networks.
+- **[Dockge](https://dockge.kuma.pet/)** - A minimalist manager focused on editing and managing `docker-compose.yaml` files.
+- **[Yacht](https://yacht.sh/)** - A lightweight dashboard for templated application deployments.
 
-## 🤖 Homelab AI in 2026
-Running local AI is now standard:
-*   **[Ollama](https://ollama.com/):** The easiest way to run LLMs (Llama 3, Mistral) in a container.
-*   **[LocalAI](https://localai.io/):** An OpenAI-compatible API for local LLMs, image generation, and more.
+## Kubernetes for Homelabs
+
+For multi-node orchestration and high availability.
+
+- **[K3s](https://k3s.io/)** - A lightweight Kubernetes distribution optimized for small-form-factor devices.
+- **[KIND (Kubernetes in Docker)](https://kind.sigs.k8s.io/)** - Useful for testing multi-node Kubernetes configurations within a single Docker environment.
+- **[Talos OS](https://www.talos.dev/)** - An immutable, security-focused Linux distribution designed specifically for running Kubernetes clusters.
+
+## Local Machine Learning Workloads
+
+Techniques for running large computational models within containers:
+- **[Ollama](https://ollama.com/)** - Simplified local execution of large language models.
+- **[LocalAI](https://localai.io/)** - A self-hosted API compatible with standard machine learning specifications.
 
 ---
-[⬅️ Back to Home](../README.md)
+
+[Back to Index](../README.md)

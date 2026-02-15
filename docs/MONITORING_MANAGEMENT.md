@@ -1,29 +1,32 @@
-# 📊 Monitoring & Management
+# Monitoring & Management
 
-"If you can't measure it, you can't improve it."
+Tracking system performance, uptime, and service health is essential for a stable homelab environment.
 
-## 📈 The Metrics Stack
-The industry standard is the **Prometheus + Grafana** duo.
+## Metrics & Visualization
 
-*   **[Prometheus](https://prometheus.io/):** Collects and stores metrics from your servers.
-*   **[Grafana](https://grafana.com/):** The dashboard of your dreams. Visualize CPU, RAM, Network, and even Smart Home data.
-*   **[InfluxDB](https://www.influxdata.com/):** A great time-series database alternative, especially for IoT/Smart Home data.
+- **[Prometheus](https://prometheus.io/)** - A monitoring system and time-series database that collects metrics through a pull model.
+- **[Grafana](https://grafana.com/)** - An analytics and visualization platform that integrates with Prometheus, InfluxDB, and other data sources to create detailed performance dashboards.
+- **[InfluxDB](https://www.influxdata.com/)** - A purpose-built time-series database often used for storing metrics from IoT devices or smart home sensors.
 
-## 🩺 Health & Uptime
-*   **[Uptime Kuma](https://github.com/louislam/uptime-kuma):** A beautiful, self-hosted service that ping your apps and notifies you (Discord/Signal/Gotify) if they go down.
-*   **[Netdata](https://www.netdata.cloud/):** Real-time, per-second monitoring. Install it once and see everything happening on your OS immediately.
-*   **[Glances](https://nicolargo.github.io/glances/):** A python-based CLI monitor that fits in your terminal.
+## Uptime & Real-time Statistics
 
-## 🏠 Lab Dashboards
-A central place for all your homelab links.
+- **[Uptime Kuma](https://github.com/louislam/uptime-kuma)** - A monitor that tracks service availability through HTTP(s), Ping, and TCP checks, providing an status page and notification integrations.
+- **[Netdata](https://www.netdata.cloud/)** - Provides high-resolution, real-time metrics for system-level monitoring directly on the host.
+- **[Glances](https://nicolargo.github.io/glances/)** - A cross-platform system monitoring tool with a console-based interface.
 
-*   **[Homepage](https://gethomepage.dev/):** Highly customizable, API integrations with almost every self-hosted app.
-*   **[Dashy](https://dashy.to/):** Feature-rich and allows for complex sub-layouts.
-*   **[Flame](https://github.com/pawelmalak/flame):** Simple, fast, and elegant for those who want a "no-nonsense" start.
+## Centralized Dashboards
 
-## 📝 Logs
-*   **[Loki](https://grafana.com/oss/loki/):** "Like Prometheus, but for logs." Integrates perfectly with Grafana.
-*   **[Dozzle](https://dozzle.dev/):** A lightweight web interface to view your Docker container logs in real-time.
+Unified interfaces for accessing self-hosted services and monitoring summary data.
+
+- **[Homepage](https://gethomepage.dev/)** - A modern dashboard that integrates with various service APIs to display stats and status indicators.
+- **[Dashy](https://dashy.to/)** - A highly configurable dashboard with support for complex layouts and multiple themes.
+- **[Flame](https://github.com/pawelmalak/flame)** - A minimalist dashboard focused on speed and simplicity.
+
+## Log Management
+
+- **[Loki](https://grafana.com/oss/loki/)** - A horizontally scalable, multi-tenant log aggregation system inspired by Prometheus.
+- **[Dozzle](https://dozzle.dev/)** - A simple web interface for viewing Docker container logs in real-time.
 
 ---
-[⬅️ Back to Home](../README.md)
+
+[Back to Index](../README.md)

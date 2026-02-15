@@ -1,28 +1,24 @@
-# 📋 The Awesome Homelab List
+# Service Directory
 
-Welcome to the comprehensive collection of open-source applications and tools for your homelab. 
+A curated index of self-hosted applications and software platforms for local infrastructure. These tools are selected for their stability and utility in a homelab environment.
 
----
-
-## 📂 Categories
-
-Explore the listings by category:
+## Categories
 
 | Category | Description |
 | :--- | :--- |
-| [🧠 AI](./AI.md) | Local LLMs, search engines, and AI assistants. |
-| [📊 Analytics](./Analytics.md) | Web and product analytics tools. |
-| [⚙️ Automation](./Automation.md) | Workflow and home automation platforms. |
-| [🔖 Bookmarking](./Bookmarking.md) | Self-hosted link and archive managers. |
-| [☁️ Cloud](./Cloud.md) | Cloud-native databases and encrypted storage. |
-| [💬 Communications](./Communications.md) | Team chat, forums, and video conferencing. |
-| [📝 CMS](./CMS.md) | Content management systems and headless APIs. |
-| [🗄️ Databases](./Databases.md) | Relational, Graph, and Vector databases. |
-| [📁 File Management](./File_Management.md) | Backup, deduplication, and file sharing. |
-| [🎬 Media](./Media.md) | Streaming, downloading, and organization. |
-| [📈 Monitoring](./Monitoring.md) | Observability, health checks, and stats. |
-| [🌐 Networking](./Networking.md) | Tunnels, VPNs, and virtual networks. |
-| [🛡️ Security](./Security.md) | Threat hunting, scanners, and encryption. |
+| [Analytics](./Analytics.md) | Tools for web and system usage analysis. |
+| [Automation](./Automation.md) | Home automation and workflow engines. |
+| [Bookmarking](./Bookmarking.md) | Research and link management. |
+| [Cloud](./Cloud.md) | File synchronization and local cloud services. |
+| [Communications](./Communications.md) | Internal chat and collaboration. |
+| [CMS](./CMS.md) | Content management and publishing tools. |
+| [Databases](./Databases.md) | Data storage and management. |
+| [File Management](./File_Management.md) | File sharing and data organization. |
+| [Media](./Media.md) | Organization and streaming systems. |
+| [Monitoring](./Monitoring.md) | Health, uptime, and performance metrics. |
+| [Networking](./Networking.md) | Tunnels, VPNs, and network tools. |
+| [Security](./Security.md) | Security analysis and hardening tools. |
 
 ---
-[⬅️ Back to Main README](../README.md)
+
+[Back to Index](../README.md)

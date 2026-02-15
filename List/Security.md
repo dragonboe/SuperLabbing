@@ -1,8 +1,8 @@
-# 🛡️ Security & Privacy
+# Security & Privacy
 
 Hardening your lab and protecting your data from threats.
 
-*   **[Wazuh](https://wazuh.com/)** - Unified XDR and SIEM protection for endpoints and cloud.
+*   **[Wazuh](https://wazuh.com/)** - Unified security protection for endpoints and cloud.
 *   **[Security Onion](https://securityonion.net/)** - Free and open platform for threat hunting and network security monitoring.
 *   **[Zeek](https://zeek.org/)** - Powerful network analysis framework for security monitoring.
 *   **[Aircrack-ng](https://www.aircrack-ng.org/)** - Complete suite of tools to assess WiFi network security.
@@ -12,4 +12,4 @@ Hardening your lab and protecting your data from threats.
 *   **[Libsodium](https://github.com/jedisct1/libsodium)** - Modern, easy-to-use crypto library for developers.
 
 ---
-[⬅️ Back to List](./README.md)
+[Back to List](./README.md)

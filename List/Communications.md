@@ -1,4 +1,4 @@
-# 💬 Communications
+# Communications
 
 Platforms for chat, forums, and secure collaboration.
 
@@ -11,4 +11,4 @@ Platforms for chat, forums, and secure collaboration.
 *   **[Rocket.Chat](https://rocket.chat/)** - The ultimate open-source communications platform.
 
 ---
-[⬅️ Back to List](./README.md)
+[Back to List](./README.md)

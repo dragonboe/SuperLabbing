@@ -1,8 +1,8 @@
-# 📝 CMS (Content Management Systems)
+# CMS (Content Management Systems)
 
 Tools for managing content and building websites.
 
-*   **[Strapi](https://strapi.io/)** - The leading open-source headless CMS.
+*   **[Strapi](https://strapi.io/)** - Open-source headless CMS.
 *   **[Umbraco](https://umbraco.com/)** - Flexible and powerful .NET Open Source CMS.
 *   **[Wagtail](https://wagtail.org/)** - A Django-based CMS that focuses on user experience.
 *   **[Grav](https://getgrav.org/)** - A modern flat-file CMS.
@@ -11,4 +11,4 @@ Tools for managing content and building websites.
 *   **[October CMS](https://octobercms.com/)** - Self-hosted CMS platform based on the Laravel PHP Framework.
 
 ---
-[⬅️ Back to List](./README.md)
+[Back to List](./README.md)

@@ -1,4 +1,4 @@
-# 🔖 Bookmarking
+# Bookmarking
 
 Self-hosted link managers and digital archive tools.
 
@@ -10,4 +10,4 @@ Self-hosted link managers and digital archive tools.
 *   **[Shiori](https://github.com/go-shiori/shiori)** - A simple bookmarks manager built with Go.
 
 ---
-[⬅️ Back to List](./README.md)
+[Back to List](./README.md)

@@ -1,30 +1,35 @@
-# 🛡️ Networking & Security
+# Networking & Security
 
-A lab is only as good as its security. Don't be the person who gets their network encrypted by ransomware.
+Documenting infrastructure choices for securing a local network and managing internal/external traffic.
 
-## 🚦 Routers & Firewalls
-Move away from ISP routers for advanced VLAN and VPN support.
+## Routing & Firewall Platforms
 
-*   **[OPNsense](https://opnsense.org/):** Hardened, open-source, and has a beautiful modern UI. Highly recommended over pfSense for most newer labs.
-*   **[pfSense CE](https://www.pfsense.org/):** The classic. Rock solid, massive community support.
-*   **[Ubiquiti UniFi](https://ui.com/):** For those who want the "Apple of Networking." Beautiful hardware and management, but proprietary.
+Transitioning from consumer routers to dedicated firewall platforms allows for advanced traffic management and VLAN segregation.
 
-## 🏠 Secure Remote Access (VPNs)
-Stop opening ports (except for 443/80 if needed).
+- **[OPNsense](https://opnsense.org/)** - A hardened, open-source firewall based on FreeBSD. It provides a modern interface and extensive plugin support.
+- **[pfSense CE](https://www.pfsense.org/)** - A widely established open-source firewall with a long history of stability and large-scale community documentation.
+- **[Ubiquiti UniFi](https://ui.com/)** - An integrated networking suite providing simplified management through a central controller.
 
-*   **[Tailscale](https://tailscale.com/):** Magic Zero-Config VPN. Works on everything. Based on WireGuard.
-*   **[WireGuard](https://www.wireguard.com/):** The fastest, simplest VPN protocol. Use it directly or via OPNsense.
-*   **[Cloudflare Tunnels](https://www.cloudflare.com/products/tunnel/):** Expose your services securely without opening a single port in your firewall.
+## Secure Remote Access
 
-## 🧹 DNS & Ad-Blocking
-*   **[Pi-hole](https://pi-hole.net/):** The OG. Network-wide ad blocking.
-*   **[AdGuard Home](https://adguard.com/en/adguard-home/overview.html):** Often preferred in 2026 for its built-in DNS-over-HTTPS (DoH) and cleaner UI.
-*   **[Unbound](https://nlnetlabs.nl/projects/unbound/about/):** Run your own recursive DNS server for ultimate privacy.
+We prioritize methods that avoid exposing multiple open ports to the internet.
 
-## 🔐 Authentication & Zero Trust
-*   **[Authelia](https://www.authelia.com/) / [Authentik](https://goauthentik.io/):** Add 2FA/SSO to every app in your lab.
-*   **[CrowdSec](https://www.crowdsec.net/):** Modern, community-driven firewall that blocks IPs based on collective intelligence. Think "Waze for Security."
-*   **[Vaultwarden](https://github.com/dani-garcia/vaultwarden):** Lightweight, self-hosted Bitwarden server for all your passwords.
+- **[Tailscale](https://tailscale.com/)** - A mesh VPN based on WireGuard. It simplifies secure connectivity between devices without complex firewall configurations.
+- **[WireGuard](https://www.wireguard.com/)** - A high-performance, modern VPN protocol implemented as a lightweight alternative to IPsec or OpenVPN.
+- **[Cloudflare Tunnels](https://www.cloudflare.com/products/tunnel/)** - Provides a method to expose internal services through the Cloudflare network without modifying local firewall rules.
+
+## DNS Management
+
+- **[AdGuard Home](https://adguard.com/en/adguard-home/overview.html)** - A network-wide DNS server that includes filtering for ads and tracking, with native support for encrypted DNS protocols.
+- **[Pi-hole](https://pi-hole.net/)** - A DNS-based blocking tool designed to sinkhole tracking and advertising domains at the network level.
+- **[Unbound](https://nlnetlabs.nl/projects/unbound/about/)** - A validating, recursive DNS resolver that enhances privacy by querying root name servers directly.
+
+## Identity & Access Control
+
+- **[Authentik](https://goauthentik.io/) / [Authelia](https://www.authelia.com/)** - Open-source identity providers that add multi-factor authentication (MFA) and Single Sign-On (SSO) to local applications.
+- **[CrowdSec](https://www.crowdsec.net/)** - A security engine that analysis logs to detect and block malicious traffic based on community-sourced threat intelligence.
+- **[Vaultwarden](https://github.com/dani-garcia/vaultwarden)** - A lightweight, self-hosted implementation of the Bitwarden API for password management.
 
 ---
-[⬅️ Back to Home](../README.md)
+
+[Back to Index](../README.md)

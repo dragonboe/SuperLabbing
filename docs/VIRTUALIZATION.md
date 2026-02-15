@@ -1,33 +1,37 @@
-# 📀 Virtualization & Operating Systems
+# Virtualization & Operating Systems
 
-The software layer that turns your hardware into a flexible powerhouse.
+This guide covers the primary software platforms used to manage virtual machines and containers on local hardware.
 
-## 🏗️ Type 1 Hypervisors (Bare Metal)
-The most common way to run a homelab.
+## Type 1 Hypervisors (Bare Metal)
 
-*   **[Proxmox VE (9.x)](https://www.proxmox.com/)**
-    *   **The Go-To:** Based on Debian, uses KVM for VMs and LXC for containers. 
-    *   **Pro Tip:** Use the "Proxmox Post Install" scripts from [tteck](https://tteck.github.io/Proxmox/) to automate your setup.
-*   **[XCP-ng](https://xcp-ng.org/)**
-    *   The open-source alternative to Citrix Hypervisor. Excellent for large clusters.
-*   **[ESXi / vSphere](https://www.vmware.com/)**
-    *   Still powerful, but Licensing changes in 2024/2025 have pushed many away towards Proxmox or Hyper-V.
+Bare metal hypervisors install directly on the hardware for maximum performance and efficiency.
 
-## 📦 Hyper-Converged / NAS OS
-Systems that combine storage and virtualization.
+- **[Proxmox VE](https://www.proxmox.com/)**
+    - **Architecture:** Debian-based platform using KVM for full virtualization and LXC for system containers.
+    - **Community Tools:** The "Proxmox Post Install" scripts by tteck are highly useful for initial configuration and automation.
+- **[XCP-ng](https://xcp-ng.org/)**
+    - A fully open-source virtualization platform based on the Xen project. It is a robust alternative for those requiring enterprise clustering features.
+- **[ESXi / vSphere](https://www.vmware.com/)**
+    - Historically the industry standard, though licensing changes have shifted many home users toward Proxmox.
 
-*   **[TrueNAS SCALE](https://www.truenas.com/truenas-scale/)**
-    *   Built on Linux. Uses ZFS for storage and KVM for VMs. Transitioning to integrated Docker/Apps in recent versions.
-*   **[Unraid](https://unraid.net/)**
-    *   Famous for its unique "mixed drive" parity system. Best-in-class UI for Docker management.
-*   **[CasaOS](https://casaos.io/) / [Umbrel](https://umbrel.com/)**
-    *   "Home Server OS" layers that sit on top of Debian/Ubuntu. Perfect for beginners who want a "One-Click App Store" experience.
+## Hyper-Converged & NAS OS
 
-## 🐧 Preferred Linux Distros
-If you prefer running on bare metal Linux:
-*   **Debian:** The rock-solid foundation for most labs.
-*   **Ubuntu Server:** Great for hardware support and newer kernels.
-*   **Alpine Linux:** Ultra-lightweight, perfect for dedicated Docker hosts.
+These systems combine storage management with built-in virtualization capabilities.
+
+- **[TrueNAS SCALE](https://www.truenas.com/truenas-scale/)**
+    - Linux-based storage platform using ZFS. It provides KVM for virtualization and supports integrated containerized applications.
+- **[Unraid](https://unraid.net/)**
+    - Known for its flexible drive array management. It includes a user-friendly interface for managing Docker stacks and virtual machines.
+- **[CasaOS](https://casaos.io/) / [Umbrel](https://umbrel.com/)**
+    - Simplified management layers that install on top of standard Linux distributions. These are designed for ease of use and automated application deployment.
+
+## Linux Distributions
+
+For those preferring a standard Linux environment for bare-metal hosting:
+- **Debian:** Often used as the base for stable, long-term server deployments.
+- **Ubuntu Server:** Provides broader hardware support and frequent kernel updates.
+- **Alpine Linux:** A security-oriented, ultra-lightweight distribution ideal for lean Docker hosts.
 
 ---
-[⬅️ Back to Home](../README.md)
+
+[Back to Index](../README.md)

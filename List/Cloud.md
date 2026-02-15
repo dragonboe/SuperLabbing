@@ -1,4 +1,4 @@
-# ☁️ Cloud & Self-Hosted Hosting
+# Cloud & Self-Hosted Hosting
 
 Cloud-native solutions and secure hosting foundations.
 
@@ -10,4 +10,4 @@ Cloud-native solutions and secure hosting foundations.
 *   **[CapRover](https://caprover.com/)** - Automated app deployment and web server manager.
 
 ---
-[⬅️ Back to List](./README.md)
+[Back to List](./README.md)
